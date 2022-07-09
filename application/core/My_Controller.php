@@ -3,11 +3,12 @@
 class My_Controller extends CI_Controller
 {
 	public $tables ;
-	public $scope ;
+	public $scope ;   // panel & site scope
+	public $url;
 	public function __construct()
 	{
 		parent::__construct();
-		$this->lang->load("public", "fa") ;
+		$this->lang->load("public", "fa") ; // fa is directory that public_lang.php is in it
 		self::setTables() ;
 	}
 
@@ -23,7 +24,7 @@ class My_Controller extends CI_Controller
 		);
 	}
 
-	protected function upload_files() {
+	protected function uploadFiles() {
 
 	}
 
